@@ -37,7 +37,7 @@ exports[`<Button/> Should match snapshot 1`] = `
 }
 
 <button
-  class="c0 undefined"
+  class="c0"
   data-testid="my-button"
 >
   My Button

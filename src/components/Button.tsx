@@ -15,10 +15,10 @@ export interface ButtonProps {
 
 const Button: React.FunctionComponent<ButtonProps> = ({
   children,
-  className,
+  className = '',
   ...rest
 }) => (
-  <StyledButton className={className + ''} {...rest} data-testid="my-button">
+  <StyledButton className={className} {...rest} data-testid="my-button">
     {children}
   </StyledButton>
 );
