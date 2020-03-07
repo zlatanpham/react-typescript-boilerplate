@@ -6,4 +6,4 @@ declare namespace yargs {
   export type Arguments<T> = any;
 }
 
-declare module 'tailwind.macro';
+declare module 'twin.macro';
