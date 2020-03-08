@@ -35,5 +35,5 @@ module.exports = override(
     ...(process.env.NODE_ENV === 'production' ? [purgecss] : []),
   ]),
   process.env.REACT_APP_BUNDLE_VISUALIZER == 1 && addBundleVisualizer(),
-  config => rewireReactHotLoader(config),
+  rewireReactHotLoader,
 );
