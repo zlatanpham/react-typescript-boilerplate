@@ -1,10 +1,10 @@
 const rewireReactHotLoader = require('react-app-rewire-hot-loader');
 const {
   addWebpackResolve,
-  addBabelPlugins,
   override,
   addPostcssPlugins,
   useEslintRc,
+  useBabelRc,
   addBundleVisualizer,
 } = require('customize-cra');
 
@@ -28,7 +28,7 @@ module.exports = override(
       'react-dom': '@hot-loader/react-dom',
     },
   }),
-  addBabelPlugins('styled-components'),
+  useBabelRc(),
   useEslintRc(),
   addPostcssPlugins([
     require('tailwindcss')('./src/tailwind.config.js'),
