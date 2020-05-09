@@ -1,6 +1,5 @@
-const rewireReactHotLoader = require('react-app-rewire-hot-loader');
+const { addReactRefresh } = require('customize-cra-react-refresh');
 const {
-  addWebpackResolve,
   override,
   addPostcssPlugins,
   useEslintRc,
@@ -9,14 +8,9 @@ const {
 } = require('customize-cra');
 
 module.exports = override(
-  addWebpackResolve({
-    alias: {
-      'react-dom': '@hot-loader/react-dom',
-    },
-  }),
   useBabelRc(),
   useEslintRc(),
   addPostcssPlugins([require('tailwindcss')('./src/tailwind.config.js')]),
   process.env.REACT_APP_BUNDLE_VISUALIZER === 'true' && addBundleVisualizer(),
-  rewireReactHotLoader,
+  addReactRefresh({ disableRefreshCheck: true }),
 );
