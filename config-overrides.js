@@ -17,6 +17,6 @@ module.exports = override(
   useBabelRc(),
   useEslintRc(),
   addPostcssPlugins([require('tailwindcss')('./src/tailwind.config.js')]),
-  process.env.REACT_APP_BUNDLE_VISUALIZER == 1 && addBundleVisualizer(),
+  process.env.REACT_APP_BUNDLE_VISUALIZER === 'true' && addBundleVisualizer(),
   rewireReactHotLoader,
 );
