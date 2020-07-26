@@ -12,5 +12,5 @@ module.exports = override(
   useEslintRc(),
   addPostcssPlugins([require('tailwindcss')('./src/tailwind.config.js')]),
   process.env.REACT_APP_BUNDLE_VISUALIZER === 'true' && addBundleVisualizer(),
-  addReactRefresh({ disableRefreshCheck: true }),
+  addReactRefresh(),
 );
