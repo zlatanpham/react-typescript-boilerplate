@@ -5,5 +5,3 @@
 declare namespace yargs {
   export type Arguments<T> = any;
 }
-
-declare module 'twin.macro';
