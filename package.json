@@ -7,8 +7,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
-    "styled-components": "^5.1.0",
-    "tailwindcss": "^1.4.6",
+    "styled-components": "^5.1.1",
+    "tailwindcss": "^1.5.2",
     "tailwindcss-transform": "^0.1.0",
     "tailwindcss-transitions": "^2.2.0"
   },
@@ -56,7 +56,7 @@
     "lint-staged": "^10.2.2",
     "prettier": "^2.0.5",
     "react-app-rewired": "^2.1.6",
-    "twin.macro": "^1.0.0-alpha.10",
+    "twin.macro": "^1.6.2",
     "typescript": "3.8.3",
     "webpack-bundle-analyzer": "^3.7.0"
   },
@@ -74,5 +74,15 @@
   },
   "engines": {
     "node": ">=12.0.0"
+  },
+  "babelMacros": {
+    "twin": {
+      "config": "src/tailwind.config.js",
+      "preset": "styled-components",
+      "autoCssProp": true,
+      "debugProp": true,
+      "debugPlugins": false,
+      "debug": false
+    }
   }
 }

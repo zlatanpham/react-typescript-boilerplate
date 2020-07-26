@@ -11,15 +11,18 @@ module.exports = {
       white: '#FFFFFF',
       primary: '#7B16FF',
       secondary: '#24292E',
+      hello: 'red',
       purple: {
         100: '#F8F6FD',
         200: '#E8E5FF',
         300: '#DDD9FF',
         400: '#5856D6',
+        600: '#7e3af2',
       },
       red: {
         100: '#ea4335',
-        200: '#E22F2F',
+        200: '#fbd5d5',
+        300: '#f8b4b4',
         500: '#85000C',
       },
       gray: {
