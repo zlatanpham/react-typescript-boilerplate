@@ -1,0 +1,8 @@
+node_modules
+dist
+build
+public
+coverage
+cypress
+storybook-static
+types

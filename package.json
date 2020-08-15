@@ -20,7 +20,9 @@
     "test:ci": "react-app-rewired test test --env=jsdom --coverage --watchAll=false --maxWorkers=2",
     "test:coverage": "react-app-rewired test --coverage --watchAll=false",
     "serve": "serve -s build",
-    "prettify": "prettier -c --write \"*/**\""
+    "prettify": "prettier -c --write \"*/**\"",
+    "lint": "eslint . --ext .ts,.tsx,.js",
+    "lint:fix": "eslint . --ext .ts,.tsx,.js --fix"
   },
   "eslintConfig": {
     "extends": "react-app"
